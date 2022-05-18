@@ -1,0 +1,56 @@
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--white-color);
+  z-index: 2000;
+}
+
+/* ============= CATEGORY ============= */
+.header_navi.category{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.header_navi.category .title{
+  font-size: 28px;
+  font-family: var(--font-accent);
+  padding-left: 20px;
+}
+
+.header_navi .iconify{ /* 검색 아이콘 */
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+/* ============= SEARCH ============= */
+.header_navi.search{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header_navi.search input{ /* 검색창 */
+  width: 70%;
+  height: 32px;
+  border-radius: 20px;
+  border: 1px solid var(--grey-color);
+  text-indent: 20px;
+}
+
+.header_navi.search input::placeholder{color: #c2c2c2;}
+.header_navi.search input:focus{outline: 1px solid var(--accent-color);}
+
+.header_navi.search .iconify{ /* 돋보기 아이콘 */
+  padding: 0;
+  margin-left: -30px;
+  vertical-align: middle;
+}

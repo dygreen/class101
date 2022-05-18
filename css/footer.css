@@ -1,0 +1,45 @@
+footer{width: 100%;}
+
+footer #gnb{ /* 하단 메뉴 */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: var(--black-color);
+  color: var(--grey-color);
+  font-family: var(--font-basic);
+  z-index: 2000;
+}
+
+#gnb .gnb_list{
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gnb_list li a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gnb_list li a.c_selected{color: var(--main-color);}
+
+.gnb_list li .iconify{font-size: 27px;} /* 아이콘 */
+
+/* 탑 버튼 */
+#top_btn{
+  position: fixed;
+  right: 10px;
+  bottom: 70px;
+  width: 48px;
+  height: 48px;
+  background: url(../image/top_btn.png) no-repeat;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 2000;
+  display: none;
+}
