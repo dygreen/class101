@@ -64,12 +64,10 @@ section#category td .iconify{
 }
 
 /* ============= SEARCH ============= */
-section#search .rising, .popular{
-  padding: 30px 20px 20px;
-}
-
 /* 실시간 급상승 */
+section#search .rising{padding: 30px 20px 20px;}
 section#search .rising{position: relative;}
+
 .rising p.title, .popular p.title{
   font-size: 19px;
   font-weight: bold;
@@ -102,12 +100,14 @@ section#search .rising{position: relative;}
 .rising .iconify{ /* down 아이콘 */
   position: absolute;
   top: 32px;
-  right: 20px;
-  font-size: 20px;
+  right: 30px;
+  font-size: 22px;
   color: var(--main-color);
+  cursor: pointer;
 }
 
-.list_all{display: none;}
+.rising_all{display: none;}
+
 table.rising_list{ /* 전체 박스 */
   width: 100%;
   height: 200px;
@@ -117,9 +117,10 @@ table.rising_list{ /* 전체 박스 */
   box-sizing: border-box;
 }
 
+table.rising_list td{padding-left: 38px;}
+
 table.rising_list td span{ /* 박스 숫자 */
   display: inline-block;
-  padding-left: 20px;
   font-weight: bold;
   color: var(--grey-color);
   width: 30px;
@@ -127,3 +128,98 @@ table.rising_list td span{ /* 박스 숫자 */
 }
 
 /* 인기 검색어 */
+section#search .popular{padding: 30px 0px 20px;}
+
+.popular .title{
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+table.popular_list{
+  width: 100%;
+  height: 250px;
+  font-size: 16px;
+}
+
+table.popular_list tr{
+  border-bottom: 1px solid #ccc;
+}
+
+table.popular_list td{padding-left: 38px;}
+
+table.popular_list td span{
+  display: inline-block;
+  font-weight: bold;
+  color: var(--grey-color);
+  width: 30px;
+  height: auto;
+}
+
+/* ============= EVENT ============= */
+/* tab button */
+section#event .tab_button{
+  padding: 80px 20px 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+section#event .tab_button li{
+  cursor: pointer;
+  padding: 5px 20px;
+  border: 2px solid var(--main-color);
+  color: #333;
+  font-weight: 500;
+}
+
+section#event .tab_button li.selected{ /* jQuery */
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+/* tab content */
+section#event .tab_content>li:not(.show){display: none;} /* jQuery */
+
+.tab_content{
+  width: 90%; 
+  margin: 0 auto;
+}
+
+.tab_content>li{ /* 전체 박스 크기: tab1, tab2 */
+  padding: 10px;
+  width: 90%;
+}
+
+.tab_content>li>ul>li{ /* event 박스 */
+  margin-bottom: 40px; /* 버튼 위치 조정 */
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab_content .img_box img{border-radius: 15px 15px 0 0;}
+
+.tab_content .text_box{
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.tab_content .text_box p:first-child{ /* 큰 텍스트 */
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--accent-color);
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.tab_content button{ /* 버튼 */
+  cursor: pointer;
+  border: none;
+  background: var(--accent-color);
+  color: var(--white-color);
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}

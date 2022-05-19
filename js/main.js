@@ -32,19 +32,35 @@ $(document).ready(function(){
   let rising = true;
   $(".rising .down_icon").click(function(){
     if(rising){
-      $(this).html('<span class="iconify" data-icon="akar-icons:chevron-up"></span>');
+      $(this).html('<span class="iconify" data-icon="akar-icons:circle-chevron-up-fill"></span>');
       $(".rising_up").fadeOut();
-      $(".list_all").slideDown("slow");
+      $(".rising_all").slideDown("slow");
       rising = false;
     } else {
-      $(this).html('<span class="iconify" data-icon="akar-icons:chevron-down"></span>');
+      $(this).html('<span class="iconify" data-icon="akar-icons:circle-chevron-down-fill"></span>');
       $(".rising_up").fadeIn();
-      $(".list_all").slideUp("slow");
+      $(".rising_all").slideUp("slow");
       rising = true;
     }
   });
 
+  // =========== EVENT ===========
+  // tab menu
+  let button = $("#event_tab .tab_button>li");
+  let content = $("#event_tab .tab_content>li");
 
+  for(let i = 0; i < button.length; i++){
+    button.eq(i).click(function(){
+      tab(i);
+    });
+  }
+
+  function tab(i){
+    button.removeClass("selected");
+    button.eq(i).addClass("selected");
+    content.removeClass("show");
+    content.eq(i).addClass("show");
+  }
 
 
 
