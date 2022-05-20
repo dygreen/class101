@@ -7,7 +7,7 @@
 	position:relative; 
 	margin:0 auto; 
 	width:100%; 
-	height: auto;
+	/* height: auto; */
 } 
 
 .swiper-wrapper .swiper-slide img{  /*가변이미지*/
@@ -61,24 +61,23 @@
 	position:relative; 
 	margin:0 auto; 
 	width:100%; 
-	height: auto;
+	/* height: auto; */
 } 
 
-.swiper-wrapper .swiper-slide img{  /*가변이미지*/
+.tab2>.swiper-wrapper>.swiper-slide>img{  /*가변이미지*/
 	width:100%; 
 	max-width:100%;
 }
 
-
 /* 하단버튼 */
-.tab2 .nav2 { 
+.tab2>.nav2 { 
 	position: absolute; 
 	left:0px; 
 	bottom:10px; 
 	text-align: center;  
 	z-index: 10; 
 } 
-.tab2 .nav2 .swiper-pagination-bullet { /* 버튼모양설정 */
+.tab2>.nav2>.swiper-pagination-bullet { /* 버튼모양설정 */
 	background-color:#ccc;  
 	opacity: 1;
 	width:10px; 
@@ -86,7 +85,7 @@
 	margin-left:5px; 
 	border-radius: 50%; 
 } 
-.tab2 .nav2 .swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
+.tab2>.nav2>.swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
 	background-color:var(--main-color); 
 	opacity:1;
 } 

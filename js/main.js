@@ -62,7 +62,18 @@ $(document).ready(function(){
     content.eq(i).addClass("show");
   }
 
+  // =========== MY PAGE ===========
+  // accordion menu
+  $("dd:not(:first)").css("display","none");
+  $("dt:first").addClass("selected");
+
+  $("dl dt").click(function(){
+    $("dl dt").find("+dd").stop().slideUp(200);
+    $(this).find("+dd").stop().slideToggle(200);
+    $("dt").removeClass("selected");
+    $(this).addClass("selected");
+  });
 
 
-
+  
 });

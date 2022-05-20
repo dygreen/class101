@@ -5,10 +5,135 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>마이페이지 | 클래스101</title>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <link rel="stylesheet" href="css/sub.css">
 </head>
 <body>
-  
+  <div id="wrap">
+    <!-- header -->
+    <header>
+      <div class="header_navi mypage">
+        <a href="mypage.html"><p class="title">마이페이지</p></a>
+        <a href="search.html"><span class="iconify" data-icon="fluent:search-12-filled"></span></a>
+      </div>
+    </header>
+
+    <!-- section -->
+    <section id="mypage">
+      <!-- 아이콘 + 정보 박스 -->
+      <div class="user_box">
+        <!-- 아이콘 -->
+        <div class="user1">
+          <div class="user_icon"><span class="iconify" data-icon="fluent:person-32-filled"></span></div>
+          <div class="user_name">
+            <p class="name"><span>도연</span> 님</p>
+            <p class="level">Lv.1</p>
+          </div>
+        </div>
+        <!-- 안내 -->
+        <div class="user2">
+          <p class="text">1,000P 추가 적립시 다음 달 Lv. UP!</p>
+        </div>
+      </div>
+
+      <!-- 쿠폰 + 포인트 박스 -->
+      <div class="info_box">
+        <div class="coupon">
+          <p>내 쿠폰 <span>9장</span></p>
+        </div>
+        <span class="iconify" data-icon="radix-icons:divider-vertical"></span>
+        <div class="point">
+          <p>포인트 <span>0p</span></p>
+        </div>
+      </div>
+
+      <!-- 아코디언 박스 -->
+      <dl>
+        <dt>
+          <p>주문내역</p>
+          <span class="iconify" data-icon="bi:caret-down-fill"></span><!-- 아이콘 -->
+        </dt>
+          <dd>
+            <p>아직 주문하신 클래스가 없습니다!<br>검색을 통해 배우고 싶은 클래스를 찾아보세요😊</p>
+          </dd>
+
+        <dt>
+          <p>FAQ</p>
+          <span class="iconify" data-icon="bi:caret-down-fill"></span>
+        </dt>
+          <dd>
+            <p>
+              <span>1. 수업 신청 후 절차가 어떻게 되나요?</span><br>수업신청은 "수업신청서 발급>>결제완료>>튜터님의 수업승인>>수업매칭"으로 절차가 진행됩니다! 튜터님과 연결되시면 일정을 조율하여 첫 수업날짜를 잡아보세요<br>
+              <span>2. 수업료는 어떻게 결제하나요?</span><br>원데이 수업: 전체수업료를 한번에 결제하는 전체결제로 진행이 됩니다. 2회차 이상의 수업: 클래스101에서 전체수업료를 가지고 있다가 첫 수업을 마친 후 수수료인 1시간 수업료를 제외한 나머지 금액을 튜터님께 돌려드리고 있어요.<br>
+              <span>3. 환불 절차는 어떻게 되나요?</span><br>"튜터에게 환불 의사 전달>환불 신청>담당자 확인 후 환불 접수(환불 신청 후 운영 시간 기준 24시간 이내 완료)>환불 진행(무통장 재입금/카드 결제 취소:영업일 기준 5~7일 소요)>환불 완료"의 절차로 진행됩니다.
+            </p>
+          </dd>
+          
+        <dt>
+          <p>이용약관</p>
+          <span class="iconify" data-icon="bi:caret-down-fill"></span>
+        </dt>
+          <dd>
+            <p>
+              <span>1. 서비스 이용</span><br>1.1 회사는 회원에게 클래스콘텐츠, 상품 등의 판매 또는 판매중개를 포함하여 지식과 정보를 제공할 수 있는 다양한 서비스를 제공합니다.<br>1.2 회원은 컴퓨터, 휴대전화 등 정보통신기기를 사용하여 서비스를 이용할 수 있으며, 개별 서비스의 구체적인 내용과 이용 조건은 개별 약관 및 정책, 공지사항, 서비스 초기화면 등에서 확인할 수 있습니다.<br>1.3 회사는 회원 모두에게 기본적으로 동일한 내용의 서비스를 제공합니다. 다만, 「청소년 보호법」 등 관련 법령 또는 개별 서비스 제공 관련한 특별한 사정에 따라 연령 또는 일정한 등급을 기준으로 이용자를 구분하여 서비스를 제공하거나 서비스의 내용, 이용 시간, 이용 횟수 등을 다르게 하는 등 서비스 이용을 제한할 수 있습니다. 이와 관련한 자세한 내용은 각 서비스상의 안내, 공지사항 등에서 확인할 수 있습니다.<br>1.4 회사는 회원이 이 약관에 위배되는 행위를 하는 경우 서비스 제공을 중단할 수 있습니다.
+            </p>
+          </dd>
+
+        <dt>
+          <p>개인정보 처리방침</p>
+          <span class="iconify" data-icon="bi:caret-down-fill"></span>
+        </dt>
+          <dd>
+            <p>
+              주식회사 클래스101(이하 “회사”)은 『정보통신망 이용촉진 및 정보보호 등에 관한 법률』(이하 “정보통신망법”), 『개인정보 보호법』 등 관련 법령상의 개인정보 보호규정을 준수하며, 정보통신망법에 의거한 개인정보처리방침을 정하여 이용자 권익보호에 최선을 다하고 있습니다. 본 개인정보처리방침은 회사가 제공하는 웹/모바일웹/앱 서비스에 적용되며 다음과 같은 내용을 포함하고 있습니다.<br>
+              <li>이용자의 권리 및 행사방법</li>
+              <li>이용자의 의무</li>
+              <li>자동 수집되는 개인정보 및 거부에 관한 사항</li>
+              <li>개인정보 수집항목 및 이용 목적</li>
+              <li>개인정보 제3자 제공</li>
+              <li>개인정보 처리위탁</li>
+              <li>개인정보 보유 및 이용기간</li>
+              <li>개인정보 파기절차 및 방법</li>
+              <li>개인정보의 보호조치에 관한 사항</li>
+              <li>개인정보 보호책임자 연락처 및 이용자 고충 처리</li>
+              <li>개인정보처리방침 고지의무</li>
+            </p>
+          </dd>
+      </dl>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <!-- 하단 고정 메뉴 -->
+      <div id="gnb">
+        <ul class="gnb_list">
+          <li><a href="index.html">
+            <span class="iconify" data-icon="bx:home-alt"></span>
+            <p>홈</p>
+          </a></li>
+          <li><a href="category.html">
+            <span class="iconify" data-icon="bx:category"></span>
+            <p>카테고리</p>
+          </a></li>
+          <li><a href="search.html">
+            <span class="iconify" data-icon="fluent:search-12-filled"></span>
+            <p>검색</p>
+          </a></li>
+          <li><a href="event.html">
+            <span class="iconify" data-icon="bx:gift"></span>
+            <p>이벤트</p>
+          </a></li>
+          <li><a href="mypage.html" class="c_selected">
+            <span class="iconify" data-icon="bi:person-circle"></span>
+            <p>마이페이지</p>
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- 탑 버튼 -->
+      <div id="top_btn"><a href="#"></a></div>
+    </footer>
+  </div>
 
 
 
@@ -19,7 +144,7 @@
 
 
   <!-- Script Source -->
-  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/main.js"></script>
 </body>

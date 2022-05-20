@@ -180,14 +180,11 @@ section#event .tab_button li.selected{ /* jQuery */
 /* tab content */
 section#event .tab_content>li:not(.show){display: none;} /* jQuery */
 
-.tab_content{
-  width: 90%; 
-  margin: 0 auto;
-}
-
 .tab_content>li{ /* 전체 박스 크기: tab1, tab2 */
+  overflow: hidden;
+  margin: 0 auto;
   padding: 10px;
-  width: 90%;
+  width: 85%;
 }
 
 .tab_content>li>ul>li{ /* event 박스 */
@@ -199,6 +196,7 @@ section#event .tab_content>li:not(.show){display: none;} /* jQuery */
   align-items: center;
 }
 
+.tab_content .img_box{width: 100%;}
 .tab_content .img_box img{border-radius: 15px 15px 0 0;}
 
 .tab_content .text_box{
@@ -219,7 +217,152 @@ section#event .tab_content>li:not(.show){display: none;} /* jQuery */
   border: none;
   background: var(--accent-color);
   color: var(--white-color);
-  font-size: 18px;
+  font-size: 17px;
   padding: 10px 20px;
   margin-bottom: 20px;
 }
+
+/* tab2 - 종료된 이벤트 표시 */
+.tab2{position: relative;}
+
+.tab2>ul>li::before{
+  content: "종료된 이벤트";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  padding: 8px 20px;
+  background: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 500;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.tab2>ul>li::after{
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: rgba(0,0,0);
+  opacity: 0.45;
+  border-radius: 15px;
+}
+
+/* ============= MY PAGE ============= */
+section#mypage{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section#mypage .user_box, .info_box{
+  width: 80%;
+  margin: 0 auto;
+}
+
+section#mypage .user_box{ /* 1번 박스 */
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  margin: 30px auto;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.user_box .user_icon{
+  width: 50px;
+  height: 50px;
+  background: var(--black-color);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.user_box .user1 .iconify{ /* 아이콘 */
+  height: 50px;
+  font-size: 40px;
+  color: var(--main-color);
+  vertical-align: middle; 
+  cursor: pointer;
+}
+
+.user_box .user1{ /* 아이콘+이름 박스 */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5px;
+}
+
+.user_name .name span{ /* 도연 */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user_name .level{
+  color: #666;
+  font-size: 16px;
+  margin-top: -5px;
+}
+
+.user2 .text{color: var(--grey-color);}
+
+section#mypage .info_box{ /* 2번 박스 */
+  display: flex;
+  height: 70px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #ececec;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.info_box .iconify{ /* 구분선 */
+  font-size: 30px;
+  color: #ccc;
+}
+
+.info_box p{margin-top: -3px;}
+
+.info_box span{ /* 강조 텍스트 */
+  display: inline-block;
+  width: 35px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 아코디언 박스 */
+section#mypage dl{
+  width: 80%;
+  margin: 0 auto;
+}
+
+dt{ /* 제목 */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  height: 35px;
+  text-indent: 10px;
+  border-bottom: 1px solid var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+dt.selected{color: var(--accent-color);}
+
+dd{ /* 내용 */
+  font-size: 12px;
+  padding: 8px 5px;
+  color: var(--grey-color);
+}
+
+dd span{font-weight: 500;}
+dd li{text-indent: 10px; list-style: inside;}

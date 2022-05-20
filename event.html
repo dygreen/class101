@@ -170,14 +170,13 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/main.js"></script>
-
   <!-- swiper -->
-  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="js/swiper.js"></script>
 
   <script type="text/javascript">
     $(function () {
       var mySwiper1 = new Swiper('.tab1', {
+        observer: true, observeParents: true,
         loop: true, //순환유무	 
         pagination: '.nav1', //네비게이션class명
         grabCursor: true, //커서 손모양
@@ -190,6 +189,7 @@
       });
 
       var mySwiper2 = new Swiper('.tab2', {
+        observer: true, observeParents: true,
         loop: true, //순환유무  
         pagination: '.nav2', //네비게이션class명
         grabCursor: true, //커서 손모양
