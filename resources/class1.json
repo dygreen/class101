@@ -1,0 +1,76 @@
+{
+  "classes": [
+    {
+      "id": 0,
+      "name": "둡",
+      "sub": "[🏆BEST] 연필 하나만으로 모든 분위기를 담아내요, 둡의 연필 드로잉",
+      "photo": "../image/class1-1.png",
+      "sale": 43,
+      "price": "월 41,154원",
+      "month": "(5개월)"
+    },
+    {
+      "id": 1,
+      "name": "핀든아트 Findenart",
+      "sub": "[🏆BEST] 여행 드로잉, 꿈만 꾸지 마세요. 핀든아트와 여행, 그리다",
+      "photo": "../image/class1-2.png",
+      "sale": 43,
+      "price": "월 49,900원",
+      "month": "(5개월)"
+    },
+    {
+      "id": 2,
+      "name": "리니",
+      "sub": "[🔥오늘할인종료] 어색한 그림은 이제 안녕! 드로잉 기초부터 시작하는 리니의 펜드로잉",
+      "photo": "../image/class1-3.png",
+      "sale": 51,
+      "price": "월 49,117원",
+      "month": "(5개월)"
+    },
+    {
+      "id": 3,
+      "name": "Zipcy",
+      "sub": "[🏆BEST] 인물화 그리기의 베이직 오브 베이직! 이목구비 하나하나 그리는 방법",
+      "photo": "../image/class1-4.png",
+      "sale": 52,
+      "price": "월 34,980원",
+      "month": "(5개월)"
+    },
+    {
+      "id": 4,
+      "name": "둡",
+      "sub": "[🏆BEST] 종이를 가득 채우는 부드럽고 감각적인 색감, 둡의 채색 인물화",
+      "photo": "../image/class1-5.png",
+      "sale": 46,
+      "price": "월 52,726원",
+      "month": "(5개월)"
+    },
+    {
+      "id": 5,
+      "name": "펜크래프트",
+      "sub": "[🏆BEST] 사각사각 손글씨의 낭만, 펜크래프트의 한글 정자체 펜글씨",
+      "photo": "../image/class1-6.png",
+      "sale": 48,
+      "price": "월 32,018원",
+      "month": "(5개월)"
+    },
+    {
+      "id": 6,
+      "name": "리니",
+      "sub": "[🏆BEST] 마카와 펜, 드로잉북만 들고 떠나요! 마카로 담는 여행의 특별한 기억",
+      "photo": "../image/class1-7.png",
+      "sale": 42,
+      "price": "월 49,936원",
+      "month": "(5개월)"
+    },
+    {
+      "id": 7,
+      "name": "약국",
+      "sub": "[🏆BEST] 약국과 함께 펜 하나로 그리는 분위기 있는 인물, 나만의 세계",
+      "photo": "../image/class1-8.png",
+      "sale": 45,
+      "price": "월 44,900원",
+      "month": "(5개월)"
+    }
+  ]
+}

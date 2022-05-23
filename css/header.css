@@ -1,4 +1,4 @@
-header{
+header:not(#class_header){
   width: 100%;
   position: fixed;
   top: 0;
@@ -90,4 +90,37 @@ header{
   font-family: var(--font-accent);
   padding-left: 20px;
   margin-top: 10px;
+}
+
+/* 1~5 class list */
+/* ============= 1. drawing ============= */
+.class_list{
+  width: 100%;
+  height: 100%;
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+#class_header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#class_header .main_title{
+  font-family: var(--font-accent);
+  font-size: 40px;
+}
+
+#class_header .main_sub{margin-bottom: 20px;}
+
+hr.main_line{ /* 세로선 */
+  height: 6vh;
+  width: .2vw;
+  border-width: 0;
+  color: var(--grey-color);
+  background-color: var(--grey-color);
+  margin-bottom: 20px;
 }

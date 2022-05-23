@@ -5,21 +5,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>드로잉 | 클래스101</title>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <link rel="stylesheet" href="css/sub.css">
 </head>
-<body>
-  
+<body class="class_list drawing" onload="getClass(), view_more();">
+  <div id="wrap" class="class_list drawing">
+    <!-- header -->
+    <header id="class_header">
+      <p class="main_title">드로잉</p>
+      <p class="main_sub">단순히 따라 그리는 그림이 아닌<br>'왜 이렇게 그려야 하는지 이해하고 그리는 그림'을 그려보세요.</p>
+      <hr class="main_line"> <!-- 세로선 -->
+    </header>
 
+    <!-- section -->
+    <section id="class_section">
+      <ul class="class_card"></ul>
+      <div class="more_btn"><button>더보기</button></div>
+    </section>
 
+    <!-- footer -->
+    <footer>
+      <!-- 하단 고정 메뉴 -->
+      <div id="gnb">
+        <ul class="gnb_list">
+          <li><a href="index.html">
+            <span class="iconify" data-icon="bx:home-alt"></span>
+            <p>홈</p>
+          </a></li>
+          <li><a href="category.html">
+            <span class="iconify" data-icon="bx:category"></span>
+            <p>카테고리</p>
+          </a></li>
+          <li><a href="search.html">
+            <span class="iconify" data-icon="fluent:search-12-filled"></span>
+            <p>검색</p>
+          </a></li>
+          <li><a href="event.html">
+            <span class="iconify" data-icon="bx:gift"></span>
+            <p>이벤트</p>
+          </a></li>
+          <li><a href="mypage.html">
+            <span class="iconify" data-icon="bi:person-circle"></span>
+            <p>마이페이지</p>
+          </a></li>
+        </ul>
+      </div>
 
-
-
-
-
-
+      <!-- 탑 버튼 -->
+      <div id="top_btn"><a href="#"></a></div>
+    </footer>
+  </div>
 
   <!-- Script Source -->
-  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/main.js"></script>
 </body>

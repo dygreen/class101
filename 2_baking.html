@@ -5,21 +5,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>베이킹 | 클래스101</title>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <link rel="stylesheet" href="css/sub.css">
 </head>
-<body>
-  
+<body class="class_list" onload="getClass2(), view_more();">
+  <div id="wrap" class="class_list">
+    <!-- header -->
+    <header id="class_header">
+      <p class="main_title">베이킹</p>
+      <p class="main_sub">실용적인 반죽 레시피, 작은 오븐으로도 <br>일관성 있는 맛을 낼 수 있는 방법을 알려드립니다.</p>
+      <hr class="main_line"> <!-- 세로선 -->
+    </header>
 
+    <!-- section -->
+    <section id="class_section">
+      <ul class="class_card"></ul>
+      <div class="more_btn"><button>더보기</button></div>
+    </section>
 
+    <!-- footer -->
+    <footer>
+      <!-- 하단 고정 메뉴 -->
+      <div id="gnb">
+        <ul class="gnb_list">
+          <li><a href="index.html">
+            <span class="iconify" data-icon="bx:home-alt"></span>
+            <p>홈</p>
+          </a></li>
+          <li><a href="category.html">
+            <span class="iconify" data-icon="bx:category"></span>
+            <p>카테고리</p>
+          </a></li>
+          <li><a href="search.html">
+            <span class="iconify" data-icon="fluent:search-12-filled"></span>
+            <p>검색</p>
+          </a></li>
+          <li><a href="event.html">
+            <span class="iconify" data-icon="bx:gift"></span>
+            <p>이벤트</p>
+          </a></li>
+          <li><a href="mypage.html">
+            <span class="iconify" data-icon="bi:person-circle"></span>
+            <p>마이페이지</p>
+          </a></li>
+        </ul>
+      </div>
 
-
-
-
-
-
+      <!-- 탑 버튼 -->
+      <div id="top_btn"><a href="#"></a></div>
+    </footer>
+  </div>
 
   <!-- Script Source -->
-  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/main.js"></script>
 </body>
