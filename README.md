@@ -4,7 +4,8 @@
 
 ***
 ***Pages***
-: 총 10page <메인(index) + gnb 메뉴(category,search,event,mypage) + 서브(1~5)>
+
+: 총 10page <메인(index) + gnb 메뉴(category,search,event,mypage) + 서브 카테고리(1~5)>
 
 : 트렌드 조사 -> 프로젝트 실행 계획 보고서 작성 -> 와이어 프레임+시안(피그마) -> 구현
 
@@ -22,4 +23,8 @@
 
 ***My page***
 * 아코디언 상세 메뉴
+
+***Category(1~5)***
+* 클래스 정보 json파일에 저장 후 ajax get 요청(데이터바인딩)
+* onload 함수 실행: 첫 로드시 4개의 클래스가 보임 -> 더보기 버튼 클릭시 추가 클래스 표시+버튼 없앰
 * 
