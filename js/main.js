@@ -100,8 +100,29 @@ function getClass2() {
     });
   });
 }
+function getClass3() {
+  $.get("resources/class3.json").done((data) => {
+    data.classes.forEach((card, i) => {
+      appendProducts(card, i);
+    });
+  });
+}
+function getClass4() {
+  $.get("resources/class4.json").done((data) => {
+    data.classes.forEach((card, i) => {
+      appendProducts(card, i);
+    });
+  });
+}
+function getClass5() {
+  $.get("resources/class5.json").done((data) => {
+    data.classes.forEach((card, i) => {
+      appendProducts(card, i);
+    });
+  });
+}
 
-// 상품 데이터바인딩 코드, drag 기능 가능하도록 설정(jquery UI)
+// 클래스 데이터바인딩 코드
 function appendProducts(classes, index) {
   let newItem = $(`
   <li data-index="${index}">

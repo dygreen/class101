@@ -1,7 +1,7 @@
 @import url(common.css);
 @import url(index.css);
 
-/* =========== swiper1 ============== */
+/* =========== swiper1(event) ============== */
 .tab1 { /* 갤러리 전체영역 설정 */
 	overflow:hidden; 
 	position:relative; 
@@ -10,7 +10,7 @@
 	/* height: auto; */
 } 
 
-.swiper-wrapper .swiper-slide img{  /*가변이미지*/
+.tab1 .swiper-wrapper .swiper-slide img{  /*가변이미지*/
 	width:100%; 
 	max-width:100%;
 }
@@ -63,7 +63,7 @@
 	/* height: auto; */
 } 
 
-.swiper-wrapper .swiper-slide img{  /*가변이미지*/
+.tab2 .swiper-wrapper .swiper-slide img{  /*가변이미지*/
 	width:100%; 
 	max-width:100%;
 }
@@ -107,28 +107,55 @@
 .tab2 .swiper-button-next { right:50px; /* background:url(); */ } /* 다음버튼 */
 
 
-/* =========== Content ============== */
+/* =========== swiper3(index) ============== */
+.visual1 { /* 갤러리 전체영역 설정 */
+	overflow:hidden; 
+	position:relative; 
+	margin:0 auto; 
+	width:100%; 
+	height: 30vh;
+} 
 
-/* .content{
-	width:100%;
+.visual1>.swiper-wrapper>.swiper-slide>img {
+	/*가변이미지*/
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
 }
-.content .con1{
-	width:100%;
-	height:200px;
-	background:orange;
+
+/* 하단버튼 */
+.visual1 .nav1 { 
+	position: absolute; 
+	left:0px; 
+	bottom:10px; 
+	text-align: center;  
+	z-index: 10; 
+} 
+.visual1 .nav1 .swiper-pagination-bullet { /* 버튼모양설정 */
+	background-color:#ccc;  
+	opacity: 1;
+	width:10px; 
+	height:10px; 
+	margin-left:5px; 
+	border-radius: 50%; 
+} 
+.visual1 .nav1 .swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
+	background-color:var(--main-color); 
+	opacity:1;
+} 
+
+
+/* 좌우버튼 */
+.visual1 .swiper-button-prev, 
+.visual1 .swiper-button-next { 
+	position:absolute; 
+	top:50%; 
+	width:20px; 
+	height:37px; 
+	margin-top:-22px; 
+	z-index:10; 
+	cursor:pointer; 
+	background-size:cover; 
 }
-.content .con2{
-	width:100%;
-	height:200px;
-	background:skyblue;
-}
-.content .con3{
-	width:100%;
-	height:200px;
-	background:pink;
-}
-footer{
-	width:100%;
-	height:50px;
-	background:gray;
-} */
+.visual1 .swiper-button-prev { left:20px; /* background:url(); */ } /* 이전버튼 */
+.visual1 .swiper-button-next { right:20px; /* background:url(); */ } /* 다음버튼 */

@@ -7,7 +7,7 @@
       "photo": "../image/class2-1.png",
       "sale": 52,
       "price": "월 22,676원",
-      "month": "(5개월)"
+      "month": "(5m)"
     },
     {
       "id": 1,
@@ -16,7 +16,7 @@
       "photo": "../image/class2-2.png",
       "sale": 45,
       "price": "월 33,900원",
-      "month": "(5개월)"
+      "month": "(5m)"
     },
     {
       "id": 2,
@@ -25,7 +25,7 @@
       "photo": "../image/class2-3.png",
       "sale": 37,
       "price": "월 35,800원",
-      "month": "(5개월)"
+      "month": "(5m)"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "photo": "../image/class2-4.png",
       "sale": 29,
       "price": "월 45,200원",
-      "month": "(5개월)"
+      "month": "(5m)"
     },
     {
       "id": 4,
@@ -43,7 +43,7 @@
       "photo": "../image/class2-5.png",
       "sale": 36,
       "price": "월 38,000원",
-      "month": "(5개월)"
+      "month": "(5m)"
     },
     {
       "id": 5,
@@ -52,7 +52,7 @@
       "photo": "../image/class2-6.png",
       "sale": 33,
       "price": "월 52,700원",
-      "month": "(5개월)"
+      "month": "(5m)"
     },
     {
       "id": 6,
@@ -61,7 +61,7 @@
       "photo": "../image/class2-7.png",
       "sale": 36,
       "price": "월 37,740원",
-      "month": "(5개월)"
+      "month": "(5m)"
     },
     {
       "id": 7,
@@ -70,7 +70,7 @@
       "photo": "../image/class2-8.png",
       "sale": 30,
       "price": "월 40,900원",
-      "month": "(5개월)"
+      "month": "(5m)"
     }
   ]
 }

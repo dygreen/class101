@@ -29,3 +29,54 @@ body{
   font-family: var(--font-basic);
   color: var(--black-color);
 }
+
+/* ********** visual ********** */
+#visual{
+  margin-top: 60px;
+  width: 100%;
+}
+
+
+
+/* ********** section ********** */
+/* ##### category icon ##### */
+section #category_box{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#category_box li{margin: 0 8px;}
+
+#category_box li a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category_icon{ /* 아이콘 배경 */
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background: #eeeeee;
+  transition: all 0.3s;
+}
+
+.category_icon:hover{background: var(--black-color);}
+
+.category_icon .iconify{ /* 아이콘 */
+  font-size: 35px;
+  color: var(--main-color);
+  vertical-align: middle;
+  height: 50px;
+}
+
+.category_title{
+  font-size: 11px;
+  margin-top: 3%;
+}
+
