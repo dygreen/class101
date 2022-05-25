@@ -134,13 +134,15 @@
 .visual1 .nav1 .swiper-pagination-bullet { /* 버튼모양설정 */
 	background-color:#ccc;  
 	opacity: 1;
-	width:10px; 
-	height:10px; 
-	margin-left:5px; 
+	width:6px; 
+	height:6px; 
+	margin-left:3px; 
 	border-radius: 50%; 
 } 
 .visual1 .nav1 .swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
 	background-color:var(--main-color); 
+	width: 20px;
+	border-radius: 10px;
 	opacity:1;
 } 
 
@@ -159,3 +161,19 @@
 }
 .visual1 .swiper-button-prev { left:20px; /* background:url(); */ } /* 이전버튼 */
 .visual1 .swiper-button-next { right:20px; /* background:url(); */ } /* 다음버튼 */
+
+
+/* =========== swiper4(index) ============== */
+.banner1 { /* 갤러리 전체영역 설정 */
+	overflow:hidden; 
+	position:relative; 
+	margin:0 auto; 
+	width:100%; 
+	height: 90px;
+} 
+
+.banner1 .swiper-wrapper .swiper-slide img{  /*가변이미지*/
+	height: 90px;
+}
+
+

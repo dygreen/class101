@@ -20,7 +20,7 @@
       </div>
     </header>
 
-    <!-- visual -->
+    <!-- visual (swiper) -->
     <div id="visual">
       <!--swiper1-->
       <div class="visual1">
@@ -38,7 +38,7 @@
     </div>
 
     <!-- section -->
-    <section>
+    <section id="section_index">
       <!-- 카테고리 아이콘 -->
       <ul id="category_box">
         <li><a href="1_drawing.html">
@@ -67,19 +67,82 @@
       <div id="top_five">
         <p class="top_title">실시간 TOP5 클래스</p>
         <ul class="top_box">
-          <li>
-            <p class="top_num">1</p>
-            <img src="" alt="top class img1">
+          <li class="top_list list1">
+            <img src="image/top1.png" alt="top class img1">
             <div class="top_textbox">
-              <p class="title"></p>
-              <p class="sub"></p>
+              <p class="title">신사임당</p>
+              <p class="sub clamp">[🔥지금최저가] (2022년 전면개정판) 가장 빠르게 돈 버는 유튜브 채널 만드는 방법</p>
+              <p class="price"><span class="sale">36%</span>월 39,600원<span class="month">(5개월)</span></p>
             </div>
           </li>
-          
+          <li class="top_list list2">
+            <img src="image/top2.png" alt="top class img1">
+            <div class="top_textbox">
+              <p class="title">부동산읽어주는남자</p>
+              <p class="sub clamp">[🔥오늘할인종료] 똑똑한 부동산 투자 방법, 내 집 마련으로 안정적인 삶까지 한 번에! 80만 유튜버 부읽남</p>
+              <p class="price"><span class="sale">36%</span>월 31,800원<span class="month">(5개월)</span></p>
+            </div>
+          </li>
+          <li class="top_list list3">
+            <img src="image/top3.png" alt="top class img1">
+            <div class="top_textbox">
+              <p class="title">아로스</p>
+              <p class="sub clamp">[💣24시간] [2022년 New 로직 반영] 하루 1시간 월 100만원, 애드센스 블로그로 만드는 법!</p>
+              <p class="price"><span class="sale">33%</span>월 45,800원<span class="month">(5개월)</span></p>
+            </div>
+          </li>
+          <li class="top_list list4">
+            <img src="image/top4.png" alt="top class img1">
+            <div class="top_textbox">
+              <p class="title">유랑</p>
+              <p class="sub clamp">[💣24시간] 무명 이모티콘 작가가 인기 작가가 된 비결! 경쟁에서 살아남는 인기 이모티콘 만들기</p>
+              <p class="price"><span class="sale">38%</span>월 39,200원<span class="month">(5개월)</span></p>
+            </div>
+          </li>
+          <li class="top_list list5">
+            <img src="image/top5.png" alt="top class img1">
+            <div class="top_textbox">
+              <p class="title">쿠자</p>
+              <p class="sub clamp">[🔥오늘할인종료] 내가 찍은 스마트폰 사진으로 블루오션에서 부수입 만드는 법 : NFT제작/마케팅/투자노하우</p>
+              <p class="price"><span class="sale">28%</span>월 51,600원<span class="month">(5개월)</span></p>
+            </div>
+          </li>
         </ul>
       </div>
 
-
+      <!-- 중간 배너 (swiper 2)-->
+      <div class="banner1">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide ban1">
+            <div class="text_box">
+              <p>101 ACADEMY 선착순 무료</p>
+              <p>디지털드로잉 무료 수강권 증정!</p>
+            </div>
+            <div class="img_box"><img src="image/banner1.png" alt="banner img1"></div>
+          </li>
+          <li class="swiper-slide ban2">
+            <div class="text_box">
+              <p>내일배움카드 있으면 무료 수강!</p>
+              <p>국비지원으로 디지털 기초역량 키우기</p>
+            </div>
+            <div class="img_box"><img src="image/banner2.png" alt="banner img1"></div>
+          </li>
+          <li class="swiper-slide ban3">
+            <div class="text_box">
+              <p>600만원이 입금되었습니다.</p>
+              <p>크리에이터 되어 경제적 자유 이루기!</p>
+            </div>
+            <div class="img_box"><img src="image/banner3.png" alt="banner img1"></div>
+          </li>
+          <li class="swiper-slide ban4">
+            <div class="text_box">
+              <p>하루 1장, 하루 10분 영어회화</p>
+              <p>101학습지로 가볍게 공부하세요!</p>
+            </div>
+            <div class="img_box"><img src="image/banner4.png" alt="banner img1"></div>
+          </li>
+        </ul>
+      </div>
 
       
     </section>
@@ -136,14 +199,13 @@
         prevButton: '.swiper-button-prev',
       });
 
-      var mySwiper2 = new Swiper('.tab2', {
+      var mySwiper2 = new Swiper('.banner1', {
         observer: true, observeParents: true,
         loop: true,  
-        loopedSlides: 3, // 파라미터를 복제한 슬라이드수를 지정
         pagination: '.nav2', 
         grabCursor: true, 
-        // autoplay: 3000, 
-        effect: 'cube', // 'slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
+        autoplay: 3000, 
+        effect: 'fade',
 
         //이전 다음 버튼
         nextButton: '.swiper-button-next2',

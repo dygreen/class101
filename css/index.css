@@ -36,9 +36,9 @@ body{
   width: 100%;
 }
 
-
-
 /* ********** section ********** */
+section#section_index{padding-bottom: 90px;}
+
 /* ##### category icon ##### */
 section #category_box{
   display: flex;
@@ -80,3 +80,92 @@ section #category_box{
   margin-top: 3%;
 }
 
+/* ##### top 5 class ##### */
+#top_five{margin: 20px;}
+#top_five .top_title{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#top_five li{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#top_five li:after{
+  position: absolute;
+  top: -20px;
+  left: 8px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(128,128,128,0.7);
+}
+
+#top_five li.list1:after{content: "1";}
+#top_five li.list2:after{content: "2";}
+#top_five li.list3:after{content: "3";}
+#top_five li.list4:after{content: "4";}
+#top_five li.list5:after{content: "5";}
+
+#top_five li img{ /* 이미지 */
+  width: 30%;
+  border-radius: 5px;
+}
+
+#top_five li .top_textbox{
+  width: 55%;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#top_five li .sub.clamp{ /* 설명 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#top_five li .price .sale{ /* % */
+  color: var(--main-color);
+  margin-right: 2%;
+}
+
+#top_five li .price .month{
+  color: #b9b9b9;
+  margin-left: 2%;
+  font-size: 11px;
+}
+
+/* ##### banner ##### */
+.banner1{margin: 50px 0;}
+
+.banner1 ul li{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: var(--white-color);
+}
+
+.banner1 .ban1{background: var(--black-color);}
+.banner1 .ban2{background: #3360ff;}
+.banner1 .ban3{background: #ffd016;}
+.banner1 .ban4{background: #ff3255;}
+
+.banner1 .text_box{
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner1 .text_box p:first-of-type{font-weight: bold;}
+.banner1 .text_box p:last-of-type{font-size: 12px;}

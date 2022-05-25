@@ -142,6 +142,8 @@ hr.main_line {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid var(--black-color);
+  box-sizing: border-box;
 }
 
 .header_navi.index img{ /* 로고 이미지 */
