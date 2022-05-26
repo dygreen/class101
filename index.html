@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/swiper_style.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body onload="splashIn();">
+  <img src="image/splash.png" alt="splash" class="splash">
+
   <div id="wrap">
     <!-- header -->
     <header>
@@ -144,7 +146,24 @@
         </ul>
       </div>
 
-      
+      <!-- 클래스 안내 (swiper 3) -->
+      <!-- 신규 클래스 -->
+      <div id="index_edu">
+        <div class="new_edu">
+          <h3 class="title">인기있는 신규 클래스</h3>
+          <ul class="swiper-wrapper"></ul>
+        </div>
+
+        <div class="deal_edu">
+          <h3 class="title">오늘의 특가! TIME DEAL</h3>
+          <ul class="swiper-wrapper"></ul>
+        </div>
+
+        <div class="md_edu">
+          <h3 class="title">MD 추천 클래스</h3>
+          <ul class="swiper-wrapper"></ul>
+        </div>
+      </div>
     </section>
 
     <!-- footer -->
@@ -175,6 +194,18 @@
         </ul>
       </div>
     </footer>
+
+    <!-- quick menu -->
+    <div id="aside">
+      <div class="quick_menu">
+        <ul class="quick_list">
+          <li><a href="mypage.html">공지사항</a></li>
+          <li><a href="mypage.html">FAQ</a></li>
+          <li><a href="mypage.html">문의</a></li>
+        </ul>
+        <div class="quick_toggle">?</div>
+      </div>
+    </div>
   </div>
 
   <!-- Script Source -->
@@ -211,6 +242,36 @@
         nextButton: '.swiper-button-next2',
         prevButton: '.swiper-button-prev2',
       });
+
+      var swiper3 = new Swiper('.new_edu', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+        observer: true, 
+        observeParents: true,
+        loop: false,
+				slidesPerView: false,
+				spaceBetween: 10,
+			});
+
+      var swiper4 = new Swiper('.deal_edu', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+        observer: true, 
+        observeParents: true,
+        loop: false,
+				slidesPerView: false,
+				spaceBetween: 10,
+			});
+
+      var swiper4 = new Swiper('.md_edu', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+        observer: true, 
+        observeParents: true,
+        loop: false,
+				slidesPerView: false,
+				spaceBetween: 10,
+			});
     });
   </script>
 </body>

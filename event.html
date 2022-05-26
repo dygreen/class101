@@ -179,7 +179,6 @@
         loop: true, //순환유무	 
         pagination: '.nav1', //네비게이션class명
         grabCursor: true, //커서 손모양
-        // autoplay: 3000, //자동진행
         effect: 'cube', // 'slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
 
         //이전 다음 버튼
@@ -189,12 +188,11 @@
 
       var mySwiper2 = new Swiper('.tab2', {
         observer: true, observeParents: true,
-        loop: true, //순환유무 
+        loop: true, 
         loopedSlides: 3, // 파라미터를 복제한 슬라이드수를 지정
-        pagination: '.nav2', //네비게이션class명
-        grabCursor: true, //커서 손모양
-        // autoplay: 3000, //자동진행
-        effect: 'cube', // 'slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
+        pagination: '.nav2', 
+        grabCursor: true, 
+        effect: 'cube', 
 
         //이전 다음 버튼
         nextButton: '.swiper-button-next2',

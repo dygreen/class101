@@ -177,3 +177,20 @@
 }
 
 
+/* =========== swiper5(index) ============== */
+.new_edu {
+	width: 100%;
+	margin: 20px auto;
+}
+
+.new_edu .swiper-slide {
+	font-size: 18px;
+	width: 250px;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}

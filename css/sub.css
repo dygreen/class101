@@ -29,6 +29,7 @@ body {
   background: var(--white-color);
   font-family: var(--font-basic);
   color: var(--black-color);
+  -webkit-text-size-adjust: 100%;
 }
 
 body.class_list {
@@ -452,8 +453,8 @@ section#class_section ul {
   justify-content: space-evenly;
 }
 
+/* 카드 */
 section#class_section ul li {
-  /* 카드 */
   width: 40%;
   margin-bottom: 30px;
   border-radius: 5px;

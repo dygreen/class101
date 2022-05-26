@@ -28,6 +28,17 @@ body{
   background: var(--white-color);
   font-family: var(--font-basic);
   color: var(--black-color);
+  -webkit-text-size-adjust: 100%;
+}
+
+img.splash{ /* 스플래쉬 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  z-index: 3000;
 }
 
 /* ********** visual ********** */
@@ -43,7 +54,7 @@ section#section_index{padding-bottom: 90px;}
 section #category_box{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #category_box li{margin: 0 8px;}
@@ -81,7 +92,7 @@ section #category_box{
 }
 
 /* ##### top 5 class ##### */
-#top_five{margin: 20px;}
+#top_five{margin: 40px 20px;}
 #top_five .top_title{
   font-weight: bold;
   font-size: 16px;
@@ -146,7 +157,7 @@ section #category_box{
 }
 
 /* ##### banner ##### */
-.banner1{margin: 50px 0;}
+.banner1{margin: 90px 0;}
 
 .banner1 ul li{
   width: 100%;
@@ -169,3 +180,107 @@ section #category_box{
 
 .banner1 .text_box p:first-of-type{font-weight: bold;}
 .banner1 .text_box p:last-of-type{font-size: 12px;}
+
+/* ##### 클래스 안내 ##### */
+#index_edu > div{margin: 50px 0;}
+#index_edu h3.title{
+  font-size: 16px;
+  margin: 20px 20px 10px;
+}
+
+/* 이미지 */
+#index_edu ul li{
+  width: 28%;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+#index_edu ul li:first-child{
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+#index_edu img {
+  width: 100%;
+  height: 90px;
+}
+
+/* 텍스트 */
+#index_edu ul li .text {
+  padding: 5% 8%;
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* 이름 */
+#index_edu .class_name {color: #666;}
+
+/* 상세 설명 */
+#index_edu .class_sub.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 5% 0;
+  line-height: 16px;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+#index_edu .class_price {margin: 5% 0;}
+
+/* 선 */
+#index_edu hr.class_line {border: 1px solid #e9e9e9;}
+
+/* 할인 */
+#index_edu .sale {
+  color: var(--main-color);
+  margin-right: 3%;
+}
+
+/* ********** quick menu ********** */
+#aside{
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 58px;
+  height: 290px;
+  overflow: hidden;
+  z-index: 2000;
+}
+
+.quick_menu{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.quick_list li, .quick_toggle{
+  width: 58px;
+  height: 58px;
+  background: var(--accent-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  text-align: center; 
+  line-height: 58px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.quick_list li{
+  position: absolute;
+  bottom: 0;
+}
+
+/* 토글 버튼 */
+.quick_toggle{
+  display: block;
+  font-weight: 500;
+  font-size: 32px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2000;
+}
