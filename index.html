@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/swiper_style.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
-<body onload="splashIn();">
+<body>
   <img src="image/splash.png" alt="splash" class="splash">
 
   <div id="wrap">
@@ -24,7 +24,6 @@
 
     <!-- visual (swiper) -->
     <div id="visual">
-      <!--swiper1-->
       <div class="visual1">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="image/visual1.png" alt="main visual1"></div>
@@ -153,12 +152,12 @@
           <h3 class="title">인기있는 신규 클래스</h3>
           <ul class="swiper-wrapper"></ul>
         </div>
-
+        <!-- 특가 클래스 -->
         <div class="deal_edu">
           <h3 class="title">오늘의 특가! TIME DEAL</h3>
           <ul class="swiper-wrapper"></ul>
         </div>
-
+        <!-- 추천 클래스 -->
         <div class="md_edu">
           <h3 class="title">MD 추천 클래스</h3>
           <ul class="swiper-wrapper"></ul>
@@ -218,7 +217,8 @@
   <script type="text/javascript">
     $(function () {
       var mySwiper1 = new Swiper('.visual1', {
-        observer: true, observeParents: true,
+        observer: true, 
+        observeParents: true,
         loop: true,	 
         pagination: '.nav1', 
         grabCursor: true, 
@@ -231,7 +231,8 @@
       });
 
       var mySwiper2 = new Swiper('.banner1', {
-        observer: true, observeParents: true,
+        observer: true, 
+        observeParents: true,
         loop: true,  
         pagination: '.nav2', 
         grabCursor: true, 
@@ -244,33 +245,33 @@
       });
 
       var swiper3 = new Swiper('.new_edu', {
-				pagination: '.swiper-pagination',
-				paginationClickable: true,
+        slidesPerView: 'auto',
+        grabCursor: true, 
         observer: true, 
         observeParents: true,
         loop: false,
-				slidesPerView: false,
 				spaceBetween: 10,
+        freeMode: true
 			});
 
       var swiper4 = new Swiper('.deal_edu', {
-				pagination: '.swiper-pagination',
-				paginationClickable: true,
+				slidesPerView: 'auto',
+        grabCursor: true, 
         observer: true, 
         observeParents: true,
         loop: false,
-				slidesPerView: false,
 				spaceBetween: 10,
+        freeMode: true
 			});
 
       var swiper4 = new Swiper('.md_edu', {
-				pagination: '.swiper-pagination',
-				paginationClickable: true,
+				slidesPerView: 'auto',
+        grabCursor: true, 
         observer: true, 
         observeParents: true,
         loop: false,
-				slidesPerView: false,
 				spaceBetween: 10,
+        freeMode: true
 			});
     });
   </script>

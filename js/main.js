@@ -10,10 +10,11 @@ function rolling() {
   });
 }
 
-// INDEX) 스플래쉬
+// INDEX) 스플래쉬: 1.5초 후 실행
 function splashIn(){
-  $(".splash").fadeOut(3000);
+  $(".splash").fadeOut(1000);
 }
+setTimeout(() => splashIn(), 1500);
 
 $(document).ready(function () {
 

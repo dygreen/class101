@@ -3,6 +3,7 @@
 @import url(footer.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+
 @font-face {
   font-family: 'GangwonEduPowerExtraBoldA';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
@@ -10,7 +11,7 @@
   font-style: normal;
 }
 
-:root{
+:root {
   /* color */
   --black-color: #0a0a0a;
   --white-color: #fafafa;
@@ -22,7 +23,7 @@
   --font-accent: 'GangwonEduPowerExtraBoldA';
 }
 
-body{
+body {
   width: 100%;
   height: 100%;
   background: var(--white-color);
@@ -31,7 +32,8 @@ body{
   -webkit-text-size-adjust: 100%;
 }
 
-img.splash{ /* 스플래쉬 */
+/* 스플래쉬 */
+img.splash {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,31 +44,36 @@ img.splash{ /* 스플래쉬 */
 }
 
 /* ********** visual ********** */
-#visual{
+#visual {
   margin-top: 60px;
   width: 100%;
 }
 
 /* ********** section ********** */
-section#section_index{padding-bottom: 90px;}
+section#section_index {
+  padding-bottom: 90px;
+}
 
 /* ##### category icon ##### */
-section #category_box{
+section #category_box {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
-#category_box li{margin: 0 8px;}
+#category_box li {
+  margin: 0 8px;
+}
 
-#category_box li a{
+#category_box li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.category_icon{ /* 아이콘 배경 */
+/* 아이콘 배경 */
+.category_icon {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -77,58 +84,84 @@ section #category_box{
   transition: all 0.3s;
 }
 
-.category_icon:hover{background: var(--black-color);}
+.category_icon:hover {
+  background: var(--black-color);
+}
 
-.category_icon .iconify{ /* 아이콘 */
+/* 아이콘 */
+.category_icon .iconify {
   font-size: 35px;
+  font-size: 2.188rem;
   color: var(--main-color);
   vertical-align: middle;
   height: 50px;
 }
 
-.category_title{
+.category_title {
   font-size: 11px;
+  font-size: 0.688rem;
   margin-top: 3%;
 }
 
 /* ##### top 5 class ##### */
-#top_five{margin: 40px 20px;}
-#top_five .top_title{
+#top_five {
+  margin: 40px 20px;
+}
+
+#top_five .top_title {
   font-weight: bold;
   font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
-#top_five li{
+#top_five li {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 10px;
   position: relative;
 }
 
-#top_five li:after{
+#top_five li:after {
   position: absolute;
   top: -20px;
   left: 8px;
   font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: rgba(128,128,128,0.7);
+  color: rgba(128, 128, 128, 0.7);
 }
 
-#top_five li.list1:after{content: "1";}
-#top_five li.list2:after{content: "2";}
-#top_five li.list3:after{content: "3";}
-#top_five li.list4:after{content: "4";}
-#top_five li.list5:after{content: "5";}
+#top_five li.list1:after {
+  content: "1";
+}
 
-#top_five li img{ /* 이미지 */
+#top_five li.list2:after {
+  content: "2";
+}
+
+#top_five li.list3:after {
+  content: "3";
+}
+
+#top_five li.list4:after {
+  content: "4";
+}
+
+#top_five li.list5:after {
+  content: "5";
+}
+
+/* 이미지 */
+#top_five li img {
   width: 30%;
   border-radius: 5px;
 }
 
-#top_five li .top_textbox{
+#top_five li .top_textbox {
   width: 55%;
   font-size: 13px;
+  font-size: 0.813rem;
   font-weight: 500;
   color: #666;
   display: flex;
@@ -136,70 +169,102 @@ section #category_box{
   justify-content: space-evenly;
 }
 
-#top_five li .sub.clamp{ /* 설명 */
+/* 설명 */
+#top_five li .sub.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
   font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
+  line-height: 16px;
 }
 
-#top_five li .price .sale{ /* % */
+/* % */
+#top_five li .price .sale {
   color: var(--main-color);
   margin-right: 2%;
 }
 
-#top_five li .price .month{
+#top_five li .price .month {
   color: #b9b9b9;
   margin-left: 2%;
   font-size: 11px;
+  font-size: 0.688rem;
 }
 
 /* ##### banner ##### */
-.banner1{margin: 90px 0;}
+.banner1 {
+  margin: 90px 0;
+}
 
-.banner1 ul li{
+.banner1 ul li {
   width: 100%;
   display: flex;
   justify-content: space-around;
   color: var(--white-color);
 }
 
-.banner1 .ban1{background: var(--black-color);}
-.banner1 .ban2{background: #3360ff;}
-.banner1 .ban3{background: #ffd016;}
-.banner1 .ban4{background: #ff3255;}
+.banner1 .ban1 {
+  background: var(--black-color);
+}
 
-.banner1 .text_box{
+.banner1 .ban2 {
+  background: #3360ff;
+}
+
+.banner1 .ban3 {
+  background: #ffd016;
+}
+
+.banner1 .ban4 {
+  background: #ff3255;
+}
+
+.banner1 .text_box {
   height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.banner1 .text_box p:first-of-type{font-weight: bold;}
-.banner1 .text_box p:last-of-type{font-size: 12px;}
+.banner1 .text_box p:first-of-type {
+  font-weight: bold;
+}
+
+.banner1 .text_box p:last-of-type {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
 
 /* ##### 클래스 안내 ##### */
-#index_edu > div{margin: 50px 0;}
-#index_edu h3.title{
+#index_edu>div {
+  margin: 50px 0;
+}
+
+#index_edu h3.title {
   font-size: 16px;
+  font-size: 1rem;
   margin: 20px 20px 10px;
 }
 
-/* 이미지 */
-#index_edu ul li{
-  width: 28%;
+/* 클래스 목록 */
+#index_edu ul li {
+  width: 30%;
   border-radius: 5px;
   overflow: hidden;
   background: var(--white-color);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
-#index_edu ul li:first-child{
+#index_edu ul li:first-child {
   margin-top: 0;
   margin-left: 20px;
+}
+
+#index_edu ul li:last-child {
+  margin-right: 20px;
 }
 
 #index_edu img {
@@ -211,12 +276,15 @@ section #category_box{
 #index_edu ul li .text {
   padding: 5% 8%;
   font-size: 12px;
+  font-size: 0.75rem;
   color: #666;
   font-weight: 500;
 }
 
 /* 이름 */
-#index_edu .class_name {color: #666;}
+#index_edu .class_name {
+  color: #666;
+}
 
 /* 상세 설명 */
 #index_edu .class_sub.clamp {
@@ -225,15 +293,20 @@ section #category_box{
   -webkit-line-clamp: 3;
   overflow: hidden;
   margin: 5% 0;
-  line-height: 16px;
+  line-height: 15px;
   font-size: 11px;
+  font-size: 0.688rem;
   font-weight: 300;
 }
 
-#index_edu .class_price {margin: 5% 0;}
+#index_edu .class_price {
+  margin: 5% 0;
+}
 
 /* 선 */
-#index_edu hr.class_line {border: 1px solid #e9e9e9;}
+#index_edu hr.class_line {
+  border: 1px solid #e9e9e9;
+}
 
 /* 할인 */
 #index_edu .sale {
@@ -242,7 +315,7 @@ section #category_box{
 }
 
 /* ********** quick menu ********** */
-#aside{
+#aside {
   position: fixed;
   bottom: 70px;
   right: 20px;
@@ -252,34 +325,39 @@ section #category_box{
   z-index: 2000;
 }
 
-.quick_menu{
+.quick_menu {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.quick_list li, .quick_toggle{
+.quick_list li,
+.quick_toggle {
   width: 58px;
   height: 58px;
   background: var(--accent-color);
   color: var(--white-color);
   border-radius: 50%;
-  text-align: center; 
-  line-height: 58px;
+  text-align: center;
+  line-height: 57px;
   font-size: 13px;
+  font-size: 0.813rem;
   cursor: pointer;
 }
 
-.quick_list li{
+.quick_list li {
+  width: 57px;
+  height: 57px;
   position: absolute;
   bottom: 0;
 }
 
 /* 토글 버튼 */
-.quick_toggle{
+.quick_toggle {
   display: block;
   font-weight: 500;
   font-size: 32px;
+  font-size: 2rem;
   position: absolute;
   bottom: 0;
   z-index: 2000;

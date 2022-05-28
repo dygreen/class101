@@ -20,14 +20,16 @@ header:not(#class_header) {
 
 .header_navi.category .title {
   font-size: 28px;
+  font-size: 1.75rem;
   font-family: var(--font-accent);
   padding-left: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
+/* 공통: 검색 아이콘 */
 .header_navi .iconify {
-  /* 공통: 검색 아이콘 */
   font-size: 30px;
+  font-size: 1.875rem;
   padding-right: 20px;
 }
 
@@ -40,8 +42,8 @@ header:not(#class_header) {
   align-items: center;
 }
 
+/* 검색창 */
 .header_navi.search input {
-  /* 검색창 */
   width: 70%;
   height: 32px;
   border-radius: 20px;
@@ -57,8 +59,8 @@ header:not(#class_header) {
   outline: 1px solid var(--accent-color);
 }
 
+/* 돋보기 아이콘 */
 .header_navi.search .iconify {
-  /* 돋보기 아이콘 */
   padding: 0;
   margin-left: -30px;
   vertical-align: middle;
@@ -77,9 +79,10 @@ header:not(#class_header) {
 
 .header_navi.event .title {
   font-size: 28px;
+  font-size: 1.75rem;
   font-family: var(--font-accent);
   padding-left: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /* ============= MY PAGE ============= */
@@ -95,9 +98,10 @@ header:not(#class_header) {
 
 .header_navi.mypage .title {
   font-size: 28px;
+  font-size: 1.75rem;
   font-family: var(--font-accent);
   padding-left: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /* ============= 1~5 CLASS LIST ============= */
@@ -119,14 +123,15 @@ header:not(#class_header) {
 #class_header .main_title {
   font-family: var(--font-accent);
   font-size: 40px;
+  font-size: 2.5rem;
 }
 
 #class_header .main_sub {
   margin-bottom: 20px;
 }
 
+/* 세로선 */
 hr.main_line {
-  /* 세로선 */
   height: 5vh;
   width: .2vw;
   border-width: 0;
@@ -146,7 +151,8 @@ hr.main_line {
   box-sizing: border-box;
 }
 
-.header_navi.index img{ /* 로고 이미지 */
+/* 로고 이미지 */
+.header_navi.index img {
   height: 20px;
   margin-left: 20px;
 }

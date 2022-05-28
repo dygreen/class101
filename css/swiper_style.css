@@ -2,177 +2,219 @@
 @import url(index.css);
 
 /* =========== swiper1(event) ============== */
-.tab1 { /* 갤러리 전체영역 설정 */
-	overflow:hidden; 
-	position:relative; 
-	margin:0 auto; 
-	width:100%; 
-	/* height: auto; */
-} 
+.tab1 {
+	/* 갤러리 전체영역 설정 */
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
 
-.tab1 .swiper-wrapper .swiper-slide img{  /*가변이미지*/
-	width:100%; 
-	max-width:100%;
+.tab1 .swiper-wrapper .swiper-slide img {
+	/*가변이미지*/
+	width: 100%;
+	max-width: 100%;
 }
 
 
 /* 하단버튼 */
-.tab1 .nav1 { 
-	position: absolute; 
-	left:0px; 
-	bottom:10px; 
-	text-align: center;  
-	z-index: 10; 
-} 
-.tab1 .nav1 .swiper-pagination-bullet { /* 버튼모양설정 */
-	background-color:#ccc;  
+.tab1 .nav1 {
+	position: absolute;
+	left: 0px;
+	bottom: 10px;
+	text-align: center;
+	z-index: 10;
+}
+
+.tab1 .nav1 .swiper-pagination-bullet {
+	/* 버튼모양설정 */
+	background-color: #ccc;
 	opacity: 1;
-	width:10px; 
-	height:10px; 
-	margin-left:5px; 
-	border-radius: 50%; 
-} 
-.tab1 .nav1 .swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
-	background-color:var(--main-color); 
-	opacity:1;
-} 
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+	border-radius: 50%;
+}
+
+.tab1 .nav1 .swiper-pagination-bullet-active {
+	/* 메뉴on 설정(현재위치활성화) */
+	background-color: var(--main-color);
+	opacity: 1;
+}
 
 
 /* 좌우버튼 */
-.tab1 .swiper-button-prev, 
-.tab1 .swiper-button-next { 
-	position:absolute; 
-	top:50%; 
-	width:27px; 
-	height:44px; 
-	margin-top:-22px; 
-	z-index:10; 
-	cursor:pointer; 
-	background-size:cover; 
+.tab1 .swiper-button-prev,
+.tab1 .swiper-button-next {
+	position: absolute;
+	top: 50%;
+	width: 27px;
+	height: 44px;
+	margin-top: -22px;
+	z-index: 10;
+	cursor: pointer;
+	background-size: cover;
 }
-.tab1 .swiper-button-prev { left:50px; /* background:url(); */ } /* 이전버튼 */
-.tab1 .swiper-button-next { right:50px; /* background:url(); */ } /* 다음버튼 */
+
+.tab1 .swiper-button-prev {
+	left: 50px;
+}
+
+/* 이전버튼 */
+.tab1 .swiper-button-next {
+	right: 50px;
+}
+
+/* 다음버튼 */
 
 
 /* =========== swiper2 ============== */
-.tab2 { /* 갤러리 전체영역 설정 */
-	overflow:hidden; 
-	position:relative; 
-	margin:0 auto; 
-	width:100%; 
-	/* height: auto; */
-} 
+.tab2 {
+	/* 갤러리 전체영역 설정 */
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
 
-.tab2 .swiper-wrapper .swiper-slide img{  /*가변이미지*/
-	width:100%; 
-	max-width:100%;
+.tab2 .swiper-wrapper .swiper-slide img {
+	/*가변이미지*/
+	width: 100%;
+	max-width: 100%;
 }
 
 
 /* 하단버튼 */
-.tab2 .nav2 { 
-	position: absolute; 
-	left:0px; 
-	bottom:10px; 
-	text-align: center;  
-	z-index: 10; 
-} 
-.tab2 .nav2 .swiper-pagination-bullet { /* 버튼모양설정 */
-	background-color:#ccc;  
+.tab2 .nav2 {
+	position: absolute;
+	left: 0px;
+	bottom: 10px;
+	text-align: center;
+	z-index: 10;
+}
+
+.tab2 .nav2 .swiper-pagination-bullet {
+	/* 버튼모양설정 */
+	background-color: #ccc;
 	opacity: 1;
-	width:10px; 
-	height:10px; 
-	margin-left:5px; 
-	border-radius: 50%; 
-} 
-.tab2 .nav2 .swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
-	background-color:var(--main-color); 
-	opacity:1;
-} 
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+	border-radius: 50%;
+}
+
+.tab2 .nav2 .swiper-pagination-bullet-active {
+	/* 메뉴on 설정(현재위치활성화) */
+	background-color: var(--main-color);
+	opacity: 1;
+}
 
 
 /* 좌우버튼 */
-.tab2 .swiper-button-prev, 
-.tab2 .swiper-button-next { 
-	position:absolute; 
-	top:50%; 
-	width:27px; 
-	height:44px; 
-	margin-top:-22px; 
-	z-index:10; 
-	cursor:pointer; 
-	background-size:cover; 
+.tab2 .swiper-button-prev,
+.tab2 .swiper-button-next {
+	position: absolute;
+	top: 50%;
+	width: 27px;
+	height: 44px;
+	margin-top: -22px;
+	z-index: 10;
+	cursor: pointer;
+	background-size: cover;
 }
-.tab2 .swiper-button-prev { left:50px; /* background:url(); */ } /* 이전버튼 */
-.tab2 .swiper-button-next { right:50px; /* background:url(); */ } /* 다음버튼 */
+
+.tab2 .swiper-button-prev {
+	left: 50px;
+}
+
+/* 이전버튼 */
+.tab2 .swiper-button-next {
+	right: 50px;
+}
+
+/* 다음버튼 */
 
 
 /* =========== swiper3(index) ============== */
-.visual1 { /* 갤러리 전체영역 설정 */
-	overflow:hidden; 
-	position:relative; 
-	margin:0 auto; 
-	width:100%; 
+.visual1 {
+	/* 갤러리 전체영역 설정 */
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
 	height: 30vh;
-} 
+}
 
+/*가변이미지*/
 .visual1>.swiper-wrapper>.swiper-slide>img {
-	/*가변이미지*/
 	width: 100%;
 	max-width: 100%;
 	height: 100%;
 }
 
 /* 하단버튼 */
-.visual1 .nav1 { 
-	position: absolute; 
-	left:0px; 
-	bottom:10px; 
-	text-align: center;  
-	z-index: 10; 
-} 
-.visual1 .nav1 .swiper-pagination-bullet { /* 버튼모양설정 */
-	background-color:#ccc;  
+.visual1 .nav1 {
+	position: absolute;
+	left: 0px;
+	bottom: 10px;
+	text-align: center;
+	z-index: 10;
+}
+
+/* 버튼모양설정 */
+.visual1 .nav1 .swiper-pagination-bullet {
+	background-color: #ccc;
 	opacity: 1;
-	width:6px; 
-	height:6px; 
-	margin-left:3px; 
-	border-radius: 50%; 
-} 
-.visual1 .nav1 .swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
-	background-color:var(--main-color); 
+	width: 6px;
+	height: 6px;
+	margin-left: 3px;
+	border-radius: 50%;
+}
+
+/* 메뉴on 설정(현재위치활성화) */
+.visual1 .nav1 .swiper-pagination-bullet-active {
+	background-color: var(--main-color);
 	width: 20px;
 	border-radius: 10px;
-	opacity:1;
-} 
+	opacity: 1;
+}
 
 
 /* 좌우버튼 */
-.visual1 .swiper-button-prev, 
-.visual1 .swiper-button-next { 
-	position:absolute; 
-	top:50%; 
-	width:20px; 
-	height:37px; 
-	margin-top:-22px; 
-	z-index:10; 
-	cursor:pointer; 
-	background-size:cover; 
+.visual1 .swiper-button-prev,
+.visual1 .swiper-button-next {
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	height: 37px;
+	margin-top: -22px;
+	z-index: 10;
+	cursor: pointer;
+	background-size: cover;
 }
-.visual1 .swiper-button-prev { left:20px; /* background:url(); */ } /* 이전버튼 */
-.visual1 .swiper-button-next { right:20px; /* background:url(); */ } /* 다음버튼 */
+
+.visual1 .swiper-button-prev {
+	left: 20px;
+}
+
+/* 이전버튼 */
+.visual1 .swiper-button-next {
+	right: 20px;
+}
 
 
 /* =========== swiper4(index) ============== */
-.banner1 { /* 갤러리 전체영역 설정 */
-	overflow:hidden; 
-	position:relative; 
-	margin:0 auto; 
-	width:100%; 
+/* 갤러리 전체영역 설정 */
+.banner1 {
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
 	height: 90px;
-} 
+}
 
-.banner1 .swiper-wrapper .swiper-slide img{  /*가변이미지*/
+/*가변이미지*/
+.banner1 .swiper-wrapper .swiper-slide img {
 	height: 90px;
 }
 

@@ -1,6 +1,9 @@
-footer{width: 100%;}
+footer {
+  width: 100%;
+}
 
-footer #gnb{ /* 하단 메뉴 */
+footer #gnb {
+  /* 하단 메뉴 */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -8,29 +11,37 @@ footer #gnb{ /* 하단 메뉴 */
   height: 60px;
   background: var(--black-color);
   color: var(--grey-color);
-  font-family: var(--font-basic);
+  font-size: 12px;
+  font-size: 0.75rem;
   z-index: 2000;
 }
 
-#gnb .gnb_list{
+#gnb .gnb_list {
   height: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.gnb_list li a{
+.gnb_list li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.gnb_list li a.c_selected{color: var(--main-color);}
 
-.gnb_list li .iconify{font-size: 27px;} /* 아이콘 */
+.gnb_list li a.c_selected {
+  color: var(--main-color);
+}
+
+/* 아이콘 */
+.gnb_list li .iconify {
+  font-size: 27px;
+  font-size: 1.688rem;
+}
 
 /* 탑 버튼 */
-#top_btn{
+#top_btn {
   position: fixed;
   right: 10px;
   bottom: 70px;
