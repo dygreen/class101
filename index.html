@@ -246,32 +246,86 @@
 
       var swiper3 = new Swiper('.new_edu', {
         slidesPerView: 'auto',
+				spaceBetween: 10,
         grabCursor: true, 
         observer: true, 
         observeParents: true,
         loop: false,
-				spaceBetween: 10,
-        freeMode: true
+        freeMode: true,
+        breakpoints: {
+          1024: {
+						slidesPerView: 5,
+						spaceBetween: 10
+					},
+					768: {
+						slidesPerView: 4,
+						spaceBetween: 10
+					},
+					640: {
+						slidesPerView: 3.3,
+						spaceBetween: 10
+					},
+					450: {
+						slidesPerView: 2.9,
+						spaceBetween: 10
+					}
+        }
 			});
 
       var swiper4 = new Swiper('.deal_edu', {
 				slidesPerView: 'auto',
+				spaceBetween: 10,
         grabCursor: true, 
         observer: true, 
         observeParents: true,
         loop: false,
-				spaceBetween: 10,
-        freeMode: true
+        freeMode: true,
+        breakpoints: {
+          1024: {
+						slidesPerView: 5,
+						spaceBetween: 10
+					},
+					768: {
+						slidesPerView: 4,
+						spaceBetween: 10
+					},
+					640: {
+						slidesPerView: 3.3,
+						spaceBetween: 10
+					},
+					450: {
+						slidesPerView: 2.9,
+						spaceBetween: 10
+					}
+        }
 			});
 
       var swiper4 = new Swiper('.md_edu', {
 				slidesPerView: 'auto',
+				spaceBetween: 10,
         grabCursor: true, 
         observer: true, 
         observeParents: true,
         loop: false,
-				spaceBetween: 10,
-        freeMode: true
+        freeMode: true,
+        breakpoints: {
+          1024: {
+						slidesPerView: 5,
+						spaceBetween: 10
+					},
+					768: {
+						slidesPerView: 4,
+						spaceBetween: 10
+					},
+					640: {
+						slidesPerView: 3.3,
+						spaceBetween: 10
+					},
+					450: {
+						slidesPerView: 2.9,
+						spaceBetween: 10
+					}
+        }
 			});
     });
   </script>
