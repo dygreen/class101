@@ -48,4 +48,4 @@
 * 클래스 정보 json파일에 저장 후 ajax get 요청(데이터바인딩) + 반복문을 통해 클래스 정보 표시
 * onload 함수 실행: 첫 로드시 4개의 클래스가 보임 -> 더보기 버튼 클릭시 추가 클래스 표시+버튼 없앰
 
-#### _자세한 프로젝트 실행과정(노션: https://prickle-turn-785.notion.site/Class101-21f80cb513634c3ca6ccc49e12543dcb)_
+#### _*자세한 프로젝트 실행과정(노션: https://prickle-turn-785.notion.site/Class101-21f80cb513634c3ca6ccc49e12543dcb)_
