@@ -94,9 +94,9 @@ $(document).ready(function () {
   let toggle = true;
   $(".quick_toggle").click(function(){
     if(toggle){
-      $(".quick_list li:first-child").stop(true,true).animate({"bottom":"62px"},500,"easeOutBack");
-			$(".quick_list li:nth-child(2)").stop(true,true).animate({"bottom":"125px"},500,"easeOutBack");
-			$(".quick_list li:last-child").stop(true,true).animate({"bottom":"188px"},500,"easeOutBack");
+      $(".quick_list li:first-child").stop(true,true).animate({"bottom":"60px"},500,"easeOutBack");
+			$(".quick_list li:nth-child(2)").stop(true,true).animate({"bottom":"119px"},500,"easeOutBack");
+			$(".quick_list li:last-child").stop(true,true).animate({"bottom":"178px"},500,"easeOutBack");
       $(this).text("×");
       toggle = false;
     } else {
