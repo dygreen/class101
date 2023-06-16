@@ -45,4 +45,4 @@
 각 메뉴 요소 간격을 줄여 문제 해결
 
 ***
-#### _*자세한 프로젝트 실행과정(노션: https://prickle-turn-785.notion.site/Class101-33412569f44f431b902b4fc08f338548)_
+#### _*자세한 프로젝트 실행과정 ([노션](https://dygreen.notion.site/Class101-92fb74e912a34c87a2a0b4e8e0311497?pvs=4))_
